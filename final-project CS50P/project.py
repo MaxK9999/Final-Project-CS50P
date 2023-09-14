@@ -192,9 +192,13 @@ class MainScene(Scene):
 
         self.keybinds = {
             pygame.K_w: (0, "up"),
+            pygame.K_UP: (0, "up"),
             pygame.K_d: (270, "right"),
+            pygame.K_RIGHT: (270, "right"),
             pygame.K_s: (180, "down"),
-            pygame.K_a: (90, "left")
+            pygame.K_DOWN: (180, "down"),
+            pygame.K_a: (90, "left"),
+            pygame.K_LEFT: (90, "left")
         }
     
         self.collect_sound = pygame.mixer.Sound("sfx/Die.mp3")
@@ -369,7 +373,7 @@ class Game:
     def load_sprites(self) -> dict:
         sprites = {}
         sprites["doom"] = pygame.image.load("sprites/doom-guy-neutral.png").convert_alpha()
-        sprites["start-background"] = pygame.image.load("sprites/welcome.png").convert_alpha()
+        sprites["start-background"] = pygame.image.load("sprites/start-background.png").convert_alpha()
         sprites["background"] = pygame.image.load("sprites/hell.jpg").convert_alpha()
         sprites["death-background"] = pygame.image.load("sprites/dead.jpg").convert_alpha()
         sprites["entity"] = pygame.image.load("sprites/enemy.png").convert_alpha()
