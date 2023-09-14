@@ -11,15 +11,19 @@ Once a player dies by hitting the edge of the screen he/she can either restart o
 
 # Source Files
 
-  project.py - Contains all the main code necessary to run the game
+  - project.py - Contains all the main code necessary to run the game
 
-  test_project.py - Contains all the test cases ran on the main file 
+  - test_project.py - Contains all the test cases ran on the main file 
 
-  requirements.txt - Features the one and only dependency to run the game: Pygame version 2.0.1
+  - requirements.txt - Features the one and only dependency to run the game: Pygame version 2.0.1
 
-  sprites folder - Here you will find all the sprites used in the game
+  - sprites folder - Here you will find all the sprites used in the game
 
-  sfx folder - All the sound fx used in the game
+  - sfx folder - All the sound fx used in the game
+
+# Tech Stack
+
+Just Python for this project with only one external library (Pygame)
 
 # About Me
 
